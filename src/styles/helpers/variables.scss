@@ -1,0 +1,51 @@
+$main-color-bg: #15112D;
+$white-color: #FFF;
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto; 
+
+    @media (max-width: 1439px) { 
+        max-width: 1140px;
+    }
+
+    @media (max-width: 1023px) { 
+        max-width: 100%;
+        padding: 0 60px;
+    }
+  
+
+    @media (max-width: 767px) { 
+        padding: 0 20px;
+    }
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+.btn {    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 16px 50px;
+    background: linear-gradient(180deg, #F52D9E 0%, #CE0476 100%);
+    box-shadow: 0px 0px 50px rgba(206, 4, 118, 0.8);
+    border-radius: 100px;
+    border: none;
+    color: $white-color;
+}
+
+.section {
+    &__title {
+        display: block;
+        text-align: center;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 37px;
+    }
+}
+
+
+
