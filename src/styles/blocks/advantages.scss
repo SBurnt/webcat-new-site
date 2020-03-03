@@ -1,6 +1,8 @@
 .advantages {
-  &__inner {
-    padding: 80px 0 40px;
+  background-color: $main-color-bg3;
+  
+  .section__inner {
+    padding-bottom: 40px;
   }
 
   &__list {

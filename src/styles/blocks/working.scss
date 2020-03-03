@@ -1,0 +1,108 @@
+.working {
+  background-color: $main-color-bg3;
+
+  // list-scrollbar item-scrollbar дублируем для отдельной полосы прокрутки
+  &__list-scrollbar {
+    display: flex;
+    overflow-x: auto;
+    cursor: pointer;
+
+    /* СТИЛИЗАЦИЯ ПОЛОСЫ ПРОКРУТКИ В START */
+
+    &::-webkit-scrollbar-button {
+      width: 4px;
+    }
+
+    /* Цвет дорожки, по которой двигается бегунок прокрутки. */
+    &::-webkit-scrollbar-track {
+      background-color: rgba(206, 4, 118, 0.2);
+      border-radius: 10px;
+    }
+
+    /* Цвет бегунка полосы, а так же его закругление. */
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(206, 4, 118);
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgb(182, 5, 105);
+    }
+
+    &::-webkit-resizer {
+      // width: 4px;
+      height: 3px;
+    }
+
+    /* Основная ширина полосы прокрутки. */
+    &::-webkit-scrollbar {
+      // width: 4px;
+      height: 3px;
+    }
+    /* СТИЛИЗАЦИЯ ПОЛОСЫ ПРОКРУТКИ END */
+  }
+
+  &__item-scrollbar {
+    min-width: 411px;
+    height: 1px;
+    margin-right: 20px;
+  }
+
+  &__list {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 24px;
+    margin-bottom: 56px;
+    // overflow: hidden;
+    // transform: scaleY(-1);
+
+    /* СТИЛИЗАЦИЯ ПОЛОСЫ ПРОКРУТКИ В START */
+    &::-webkit-scrollbar {
+      // width: 4px;
+      height: 0px;
+    }
+    /* СТИЛИЗАЦИЯ ПОЛОСЫ ПРОКРУТКИ END */
+  }
+
+  &__item {
+    background-color: $main-color-bg-desc;
+    min-width: 411px;
+
+    padding: 35px 50px;
+    border-radius: 25px;
+    margin-right: 20px;
+    // transform: scaleY(-1);
+  }
+
+  &__item-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-top: 23px;
+  }
+
+  &__description {
+    margin: 11px 0 13px;
+
+    &-item {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__item-subtitle {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -1,10 +1,7 @@
 .team {
-  &__inner {
-    padding: 70px 0 90px;
-  }
+  background: $main-color-bg2;
 
   &__top {
-    margin-top: 43px;
     display: flex;
     justify-content: center;
   }
@@ -48,7 +45,7 @@
   &__top-desc {
     position: relative;
     padding: 32px 57px;
-    background: linear-gradient(180deg, rgba(203, 233, 229, 0.3) 15.17%, rgba(191, 228, 225, 0.3) 82.59%);
+    background: $main-color-bg-desc;
     border-radius: 30px;
     width: 783px;
 
@@ -60,7 +57,7 @@
       top: 38px;
       position: absolute;
       border-top: 16px solid transparent;
-      border-right: 28px solid rgba(203, 233, 229, 0.3);
+      border-right: 28px solid $main-color-bg-desc;
       border-bottom: 16px solid transparent;
     }
   }
@@ -99,13 +96,8 @@
       height: 142px;
       border-radius: 40px;
       transform: rotate(109.37deg);
-      background-color: linear-gradient(180deg, #cbe9e5 0%, #bfe4e1 83.44%);
     }
   }
-
-  // &__bottom-item {
-
-  // }
 
   &__bottom-img-wrap {
     position: relative;

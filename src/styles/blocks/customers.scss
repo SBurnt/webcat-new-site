@@ -1,16 +1,8 @@
 .customers {
   background: $main-color-bg;
 
-  &__inner {
-    padding: 65px 0 80px;
-  }
-
   .section__title {
     color: $white-color;
-  }
-
-  &__list-wrap {
-    margin-top: 34px;
   }
 
   &__list {

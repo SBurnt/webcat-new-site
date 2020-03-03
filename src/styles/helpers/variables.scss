@@ -1,4 +1,9 @@
 $main-color-bg: #15112d;
+$main-color-bg2: linear-gradient(180deg, rgba(203, 233, 229, 0.2) 0%, rgba(191, 228, 225, 0.2) 83.44%);
+$main-color-bg3: #fff;
+// $main-color-bg-desc: linear-gradient(180deg, rgba(203, 233, 229, 0.3) 0%, rgba(191, 228, 225, 0.3) 83.44%);
+$main-color-bg-desc: rgba(203, 233, 229, 0.3);
+
 $white-color: #fff;
 $black-color-text: #0a0621;
 $pink-color-text: #ce0476;
@@ -46,11 +51,16 @@ body {
 }
 
 .section {
+  &__inner {
+    padding: 73px 0 80px;
+  }
+
   &__title {
     display: block;
     text-align: center;
     font-weight: 800;
     font-size: 30px;
     line-height: 37px;
+    margin-bottom: 44px;
   }
 }
