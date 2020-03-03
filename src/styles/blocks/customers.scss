@@ -1,0 +1,38 @@
+.customers {
+  background: $main-color-bg;
+
+  &__inner {
+    padding: 65px 0 80px;
+  }
+
+  .section__title {
+    color: $white-color;
+  }
+
+  &__list-wrap {
+    margin-top: 34px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    margin-right: 50px;
+  }
+
+  // &__item:last-child {
+  //   margin-bottom: 0;
+  // }
+
+  &__img {
+    height: 30px;
+  }
+
+  &__list:last-child &__item &__img {
+    height: 58px;
+  }
+}
