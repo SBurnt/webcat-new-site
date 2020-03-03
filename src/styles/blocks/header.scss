@@ -1,6 +1,6 @@
 .header {
-  background: $main-color-bg;
-
+  background: $main-color-bg url(../assets/img/header-backgroud.png) no-repeat right center;
+  background-size: contain;
 
   &__inner {
     position: relative;
@@ -22,7 +22,7 @@
 
       &:before {
         position: absolute;
-        content: "";
+        content: '';
         right: -22px;
         top: 1px;
         width: 1px;
@@ -45,23 +45,23 @@
     line-height: 20px;
 
     span {
-      &:first-child {      
+      &:first-child {
         font-size: 16px;
         font-weight: normal;
       }
-  
+
       &:last-child {
         font-size: 16px;
       }
     }
-  }  
+  }
 
   &__title {
     width: 608px;
     color: $white-color;
     font-weight: 900;
     font-size: 40px;
-    line-height: 49px;    
+    line-height: 49px;
   }
 
   &__desc {
@@ -83,8 +83,8 @@
     transform: translateX(-50%);
     max-width: 1145px;
     width: 100%;
-    background: radial-gradient(122.88% 958.33% at 49.96% 270%, #1860BB 0%, #720747 100%),
-                radial-gradient(86.33% 1615.09% at 34.15% 50%, #1860BB 0%, #720747 100%);
+    background: radial-gradient(122.88% 958.33% at 49.96% 270%, #1860bb 0%, #720747 100%),
+      radial-gradient(86.33% 1615.09% at 34.15% 50%, #1860bb 0%, #720747 100%);
     box-shadow: 0px 0px 90px rgba(21, 17, 45, 0.4);
     border-radius: 50px;
   }
