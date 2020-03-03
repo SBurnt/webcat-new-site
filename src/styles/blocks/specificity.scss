@@ -1,8 +1,13 @@
 .specificity {
   background-color: $main-color-bg3;
 
+  .section__inner {
+    padding-bottom: 185px;
+  }
+
   &__list {
     display: flex;
+    justify-content: space-around;
     // flex-wrap: wrap;
   }
 
@@ -12,14 +17,9 @@
     border: 2px solid rgba(42, 69, 124, 0.3);
     width: 440px;
     padding: 40px 40px 70px 40px;
-    margin-right: 30px;
     // border-color: linear-gradient(306.06deg, #651b55 -30.72%, #2a457c 120.95%);
     // border-color: linear-gradient(233.5deg, #1860bb -8.16%, #720747 109.34%),
     // linear-gradient(318.85deg, #153366 3.36%, #6c0947 115.9%);
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 
   &__item-title {
