@@ -1,0 +1,13 @@
+.footer {
+  background: $main-color-bg;
+  height: 500px;
+
+  .section__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section__title {
+    color: $white-color;
+  }
+}
