@@ -9,11 +9,25 @@
     justify-content: center;
   }
 
-  &__top-img {
+  &__top-img-wrap {
+    position: relative;
     width: 323px;
     height: 323px;
     background-color: $gray-color-img-bg;
-    margin-right: 35px;
+    margin-right: 40px;
+  }
+
+  &__top-img {
+    width: 216px;
+    height: 216px;
+    position: absolute;
+    left: 51px;
+    bottom: 35px;
+
+    background: linear-gradient(233.5deg, #1860bb -8.16%, #720747 109.34%),
+      linear-gradient(318.85deg, #153366 3.36%, #6c0947 115.9%);
+    border-radius: 60px;
+    transform: rotate(-152deg);
   }
 
   &__top-name {
@@ -36,7 +50,7 @@
     padding: 32px 57px;
     background: linear-gradient(180deg, rgba(203, 233, 229, 0.3) 15.17%, rgba(191, 228, 225, 0.3) 82.59%);
     border-radius: 30px;
-    width: 677px;
+    width: 783px;
 
     &:before {
       content: '';
@@ -46,7 +60,7 @@
       top: 38px;
       position: absolute;
       border-top: 16px solid transparent;
-      border-right: 26px solid rgba(203, 233, 229, 0.3);
+      border-right: 28px solid rgba(203, 233, 229, 0.3);
       border-bottom: 16px solid transparent;
     }
   }
@@ -78,12 +92,45 @@
   &__bottom-item {
     display: flex;
     flex-direction: column;
+    width: 195px;
+
+    &:last-child .team__bottom-img-wrap {
+      width: 142px;
+      height: 142px;
+      border-radius: 40px;
+      transform: rotate(109.37deg);
+      background-color: linear-gradient(180deg, #cbe9e5 0%, #bfe4e1 83.44%);
+    }
   }
 
+  // &__bottom-item {
+
+  // }
+
   &__bottom-img-wrap {
+    position: relative;
     width: 150px;
     height: 150px;
     background-color: $gray-color-img-bg;
+    margin-bottom: 20px;
+
+    span {
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      font-weight: 900;
+      font-size: 56px;
+      line-height: 68px;
+      text-align: center;
+      background: -o-linear-gradient(306.06deg, #1860bb -30.72%, #720747 120.95%),
+        -o-linear-gradient(181.14deg, #283956 -27.18%, #4a0a32 120.71%), #c4c4c4;
+      background: linear-gradient(306.06deg, #1860bb -30.72%, #720747 120.95%),
+        linear-gradient(181.14deg, #283956 -27.18%, #4a0a32 120.71%), #c4c4c4;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: rotate(-109.37deg);
+    }
   }
 
   &__bottom-name {

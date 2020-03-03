@@ -5,7 +5,7 @@ $pink-color-text: #ce0476;
 $gray-color-img-bg: rgba(196, 196, 196, 0.3);
 
 .container {
-  max-width: 1400px;
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
 
@@ -30,6 +30,7 @@ html {
 body {
   font-family: 'Montserrat', 'Times New Roman', Arial, sans-serif;
   color: $black-color-text;
+  width: 1920px;
 }
 
 .btn {
