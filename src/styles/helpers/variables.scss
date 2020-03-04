@@ -9,6 +9,10 @@ $black-color-text: #0a0621;
 $pink-color-text: #ce0476;
 $gray-color-img-bg: rgba(196, 196, 196, 0.3);
 
+// .header, .main, .footer {
+//   display: none;
+// }
+
 .container {
   max-width: 1440px;
   width: 100%;
@@ -36,6 +40,49 @@ body {
   font-family: 'Montserrat', 'Times New Roman', Arial, sans-serif;
   color: $black-color-text;
   width: 1920px;
+}
+
+.contacts {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    &:first-child {
+      position: relative;
+      margin-right: 43px;
+
+      &:before {
+        position: absolute;
+        content: '';
+        right: -22px;
+        top: 1px;
+        width: 1px;
+        height: 22px;
+        background-color: $white-color;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__phone {
+    color: $white-color;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+
+    span {
+      &:first-child {
+        font-size: 16px;
+        font-weight: normal;
+      }
+
+      &:last-child {
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 .btn {

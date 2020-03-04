@@ -1,6 +1,5 @@
 .footer {
   background: $main-color-bg;
-  // height: 500px;
 
   .section__inner {
     display: flex;
@@ -79,6 +78,7 @@
     display: flex;
     opacity: 0.7;
     margin: 20px 0;
+    align-items: center;
 
     & li:first-child {
       margin-right: 14px;
