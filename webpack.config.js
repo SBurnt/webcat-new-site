@@ -55,6 +55,16 @@ const optimizationImg = () => {
           progressive: true,
           quality: 70,
         },
+        optipng: {
+          enabled: true,
+        },
+        pngquant: {
+          quality: [0.65, 0.90],
+          speed: 4
+        },
+        gifsicle: {
+          interlaced: false,
+        }
       },
     };
   }
@@ -111,7 +121,7 @@ module.exports = {
         use: cssLoaders('sass-loader'),
       },
       {
-        test: /\.(png|jpe?g|gif|ico)$/i,
+        test: /\.(gif|png|jpe?g|svg)$/i,
         use: [
           {
             loader: 'file-loader',
