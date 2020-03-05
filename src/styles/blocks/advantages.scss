@@ -1,6 +1,6 @@
 .advantages {
   background-color: $main-color-bg3;
-  
+
   .section__inner {
     padding-bottom: 40px;
   }
@@ -29,5 +29,29 @@
       font-size: 20px;
       color: $pink-color-text;
     }
+  }
+
+  @media (max-width: 1919.98px) {
+  }
+
+  @media (max-width: 1439.98px) {
+    .section__inner {
+      padding-top: 56px;
+    }
+
+    &__list {
+      max-width: 720px;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  }
+
+  @media (max-width: 1023.98px) {
+  }
+
+  @media (max-width: 767.98px) {
+  }
+
+  @media (max-width: 374.98px) {
   }
 }

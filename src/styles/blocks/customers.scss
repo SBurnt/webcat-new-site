@@ -16,15 +16,33 @@
     margin-right: 50px;
   }
 
-  // &__item:last-child {
-  //   margin-bottom: 0;
-  // }
-
   &__img {
     height: 30px;
   }
 
+  &__list &__item:last-child {
+    margin-right: 0;
+  }
+
   &__list:last-child &__item &__img {
     height: 58px;
+  }
+
+  @media (max-width: 1919.98px) {
+  }
+
+  @media (max-width: 1439.98px) {
+    // .section__inner {
+    //   padding: 61px 0 80px;
+    // }
+  }
+
+  @media (max-width: 1023.98px) {
+  }
+
+  @media (max-width: 767.98px) {
+  }
+
+  @media (max-width: 374.98px) {
   }
 }
