@@ -54,6 +54,20 @@
   }
 
   @media (max-width: 1439.98px) {
+    &__list {
+      flex-direction: column;
+      align-items: center;
+      // flex-wrap: wrap;
+    }
+  
+    &__item:not(:last-child) {
+      height: 100%;
+      margin-bottom: 154px;
+    }
+
+    // &__item:last-child {
+    //   margin-bottom: 0;
+    // }
   }
 
   @media (max-width: 1023.98px) {
