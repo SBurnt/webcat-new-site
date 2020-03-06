@@ -36,7 +36,7 @@
 
   @media (max-width: 1439.98px) {
     .section__inner {
-      padding-top: 56px;
+      padding-top: 55px;
     }
 
     &__list {
@@ -50,6 +50,27 @@
   }
 
   @media (max-width: 767.98px) {
+    &__list {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      :last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__item {
+      margin-bottom: 20px;
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__text {
+      margin-left: 0;
+    }
   }
 
   @media (max-width: 374.98px) {

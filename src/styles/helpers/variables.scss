@@ -36,9 +36,20 @@ $gray-color-img-bg: rgba(196, 196, 196, 0.3);
 
   @media (max-width: 767.98px) {
     padding: 0 20px;
+
+    .section__inner {
+      padding: 50px 0 60px;
+    }
+
+    .section__title {
+      margin-bottom: 25px;
+    }
   }
 
   @media (max-width: 374.98px) {
+    .btn {
+      padding: 16px 47px;
+    }
   }
 }
 

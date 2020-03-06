@@ -35,7 +35,8 @@
   }
 
   &__confid {
-    width: 440px;
+    width: 100%;
+    max-width: 440px;
     font-weight: 300;
     font-size: 16px;
     line-height: 20px;
@@ -132,7 +133,6 @@
 
     &__form-input {
       width: 100%;
-      text-align: center;
       padding-top: 20px;
       margin-right: 0;
     }
@@ -150,6 +150,26 @@
   }
 
   @media (max-width: 767.98px) {
+    &__left {
+      margin-bottom: 45px;
+    }
+
+    .section__title {
+      width: 219px;
+      text-align: left;
+    }
+
+    &__subtitle {
+      text-align: left;
+    }
+
+    &__confid {
+      text-align: left;
+    }
+
+    &__right {
+      text-align: left;
+    }
   }
 
   @media (max-width: 374.98px) {
