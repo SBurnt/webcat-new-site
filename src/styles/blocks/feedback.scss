@@ -1,4 +1,4 @@
-.thanks {
+.feedback {
   position: relative;
   display: none;
   background: $main-color-bg;
@@ -31,21 +31,44 @@
 
   &__subtitle {
     width: 100%;
-    max-width: 360px;
+    max-width: 290px;
     color: $white-color;
     line-height: 15px;
     margin: 20px 0;
   }
 
-  &__btn {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    padding: 16px 50px;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  &__form-input {
+    width: 100%;
     background: transparent;
-    border-radius: 100px;
-    border: 1px solid $pink-color-text;
+    font-size: 18px;
+    line-height: 22px;
     color: $white-color;
+    // opacity: 0.4;
+    padding: 2px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid $pink-color-text;
+  }
+
+  &__btn {
+    margin-top: 25px;
+  }
+
+  &__btn-back {
+    background: transparent;
+    color: $white-color;
+    line-height: 15px;
+    border: none;
+    margin-top: 24px;
   }
 
   &::after {
