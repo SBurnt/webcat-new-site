@@ -1,4 +1,4 @@
-.feedback {
+.menu {
   position: relative;
   display: none;
   background: $main-color-bg;
@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__top {
@@ -39,46 +40,32 @@
     color: $white-color;
   }
 
-  &__subtitle {
-    width: 100%;
-    max-width: 290px;
+  &__cell {
+    line-height: 20px;
+    // color: $white-color;
+    margin-bottom: 40px;
+  }
+
+  &__cell-link {
     color: $white-color;
-    line-height: 15px;
-    margin: 20px 0;
   }
 
-  &__form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-  }
+  .header__burger.active .header__burger-line {
+    background: 0 0;
 
-  &__form-input {
-    width: 100%;
-    background: transparent;
-    font-size: 18px;
-    line-height: 22px;
-    color: $white-color;
-    // opacity: 0.4;
-    padding: 2px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    border: none;
-    border-bottom: 1px solid $pink-color-text;
-  }
+    &::before {
+      width: 16px;
+      top: 0;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
 
-  &__btn {
-    margin-top: 25px;
-  }
-
-  &__btn-back {
-    background: transparent;
-    color: $white-color;
-    line-height: 15px;
-    border: none;
-    margin-top: 24px;
+    &::after {
+      width: 16px;
+      bottom: 0;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
   }
 
   &::after {

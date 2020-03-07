@@ -63,6 +63,9 @@ body {
   font-family: 'Montserrat', 'Times New Roman', Arial, sans-serif;
   color: $black-color-text;
   // width: 1440px;
+  &.overflow-hidden {
+    overflow: hidden;
+  }
 }
 
 .contacts {
@@ -107,6 +110,68 @@ body {
     }
   }
 }
+
+.header {
+  &__burger {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 9px 21px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  &__burger-line {
+    position: relative;
+    width: 11px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: $white-color;
+    margin-right: 6px;
+    opacity: 0.6;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: -3px;
+      right: 0;
+      width: 14px;
+      height: 2px;
+      border-radius: 2px;
+      background-color: $white-color;
+      -webkit-transition: all 0.1s ease-out;
+      transition: all 2s ease-out;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: -3px;
+      right: 0;
+      width: 17px;
+      height: 2px;
+      border-radius: 2px;
+      background-color: $white-color;
+      -webkit-transition: all 0.1s ease-out;
+      transition: all 2s ease-out;
+    }
+  }
+
+  &__burger-text {
+    font-size: 18px;
+    line-height: 22px;
+    color: $white-color;
+    opacity: 0.6;
+  }
+}
+
+// .header {
+//   &__burger.active {
+//   }
+// }
 
 .btn {
   font-style: normal;
