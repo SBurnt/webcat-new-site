@@ -1,10 +1,9 @@
 $main-color-bg: #15112d;
 $main-color-bg2: linear-gradient(180deg, rgba(203, 233, 229, 0.2) 0%, rgba(191, 228, 225, 0.2) 83.44%);
-$main-color-bg3: #fff;
+$main-color-bg3: #ffffff;
 // $main-color-bg-desc: linear-gradient(180deg, rgba(203, 233, 229, 0.3) 0%, rgba(191, 228, 225, 0.3) 83.44%);
 $main-color-bg-desc: rgba(203, 233, 229, 0.3);
-
-$white-color: #fff;
+$white-color: #ffffff;
 $black-color-text: #0a0621;
 $pink-color-text: #ce0476;
 $gray-color-img-bg: rgba(196, 196, 196, 0.3);
@@ -49,7 +48,6 @@ $gray-color-img-bg: rgba(196, 196, 196, 0.3);
   }
 
   @media (max-width: 374.98px) {
-
     .section__inner {
       padding: 40px 0 60px;
     }
@@ -69,9 +67,10 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', 'Times New Roman', Arial, sans-serif;
-  color: $black-color-text;
   overflow-x: hidden;
+
+  font-family: "Montserrat", "Times New Roman", Arial, sans-serif;
+  color: $black-color-text;
 
   &.overflow-hidden {
     overflow: hidden;
@@ -87,15 +86,18 @@ body {
   &__item {
     &:first-child {
       position: relative;
+
       margin-right: 43px;
 
       &:before {
+        content: "";
         position: absolute;
-        content: '';
-        right: -22px;
         top: 1px;
+        right: -22px;
+
         width: 1px;
         height: 22px;
+
         background-color: $white-color;
         opacity: 0.6;
       }
@@ -103,15 +105,15 @@ body {
   }
 
   &__phone {
-    color: $white-color;
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
+    color: $white-color;
 
     span {
       &:first-child {
-        font-size: 16px;
         font-weight: normal;
+        font-size: 16px;
       }
 
       &:last-child {
@@ -123,50 +125,60 @@ body {
 
 .header {
   &__burger {
+    z-index: 5;
+
     display: none;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.1);
     padding: 9px 21px;
+
+    background: rgba(255, 255, 255, 0.1);
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    z-index: 5;
   }
 
   &__burger-line {
     position: relative;
+
     width: 11px;
     height: 2px;
-    border-radius: 2px;
-    background-color: $white-color;
     margin-right: 6px;
+
+    background-color: $white-color;
+    border-radius: 2px;
     opacity: 0.6;
 
     &::before {
+      content: "";
       position: absolute;
-      content: '';
       top: -3px;
       right: 0;
+
       width: 14px;
       height: 2px;
-      border-radius: 2px;
+
       background-color: $white-color;
+      border-radius: 2px;
+
       -webkit-transition: all 0.1s ease-out;
-      transition: all 2s ease-out;
+              transition: all 2s ease-out;
     }
 
     &::after {
+      content: "";
       position: absolute;
-      content: '';
-      bottom: -3px;
       right: 0;
+      bottom: -3px;
+
       width: 17px;
       height: 2px;
-      border-radius: 2px;
+
       background-color: $white-color;
+      border-radius: 2px;
+
       -webkit-transition: all 0.1s ease-out;
-      transition: all 2s ease-out;
+              transition: all 2s ease-out;
     }
   }
 
@@ -174,6 +186,7 @@ body {
     font-size: 18px;
     line-height: 22px;
     color: $white-color;
+
     opacity: 0.6;
   }
 }
@@ -184,15 +197,17 @@ body {
 // }
 
 .btn {
+  padding: 16px 50px;
+
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  padding: 16px 50px;
-  background: linear-gradient(180deg, #f52d9e 0%, rgb(206, 4, 118) 100%);
-  box-shadow: 0px 0px 50px rgba(206, 4, 118, 0.8);
-  border-radius: 100px;
-  border: none;
   color: $white-color;
+
+  background: linear-gradient(180deg, #f52d9e 0%, rgb(206, 4, 118) 100%);
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0 0 50px rgba(206, 4, 118, 0.8);
 }
 
 .section {
@@ -202,10 +217,11 @@ body {
 
   &__title {
     display: block;
-    text-align: center;
+    margin-bottom: 44px;
+
     font-weight: 800;
     font-size: 30px;
     line-height: 37px;
-    margin-bottom: 44px;
+    text-align: center;
   }
 }

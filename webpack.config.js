@@ -24,23 +24,27 @@ const optimization = () => {
 
 const filename = ext => (isDev ? `[name].${ext}` : `[name].[hash].${ext}`);
 
-const cssLoaders = extra => {
-  const loaders = [
-    {
-      loader: MiniCssExtractPlugin.loader,
-      options: {
-        hmr: isDev,
-        reloadAll: true,
-      },
-    },
-    'css-loader',
-  ];
+// const cssLoaders = extra => {
+//   const loaders = [
+//     {
+//       loader: MiniCssExtractPlugin.loader,
+//       options: {
+//         hmr: isDev,
+//         reloadAll: true,
+//       },
+//     },
+//     // {
+//     //   loader: 'postcss-loader',
+//     //   options: { sourceMap: true, config: { path: path.resolve(__dirname, 'src/postcss.config.js' )} },
+//     // },
+//     'css-loader',
+//   ];
 
-  if (extra) {
-    loaders.push(extra);
-  }
-  return loaders;
-};
+//   if (extra) {
+//     loaders.push(extra);
+//   }
+//   return loaders;
+// };
 
 const optimizationImg = () => {
   let config = {
@@ -59,12 +63,12 @@ const optimizationImg = () => {
           enabled: true,
         },
         pngquant: {
-          quality: [0.65, 0.90],
-          speed: 4
+          quality: [0.65, 0.9],
+          speed: 4,
         },
         gifsicle: {
           interlaced: false,
-        }
+        },
       },
     };
   }
@@ -106,20 +110,62 @@ module.exports = {
       // { from: path.resolve(__dirname, 'src/assets/fonts'), to: path.resolve(__dirname, 'dist/assets/fonts') },
     ]),
     new MiniCssExtractPlugin({
-      filename: filename('css')
+      filename: filename('css'),
     }),
     // new MiniCssExtractPlugin({ filename: 'css/[name].css', chunkFilename: 'css/[id].css' }),
   ],
   module: {
     rules: [
+      // {
+      //   test: /\.css$/,
+      //   use: cssLoaders(),
+      // },
+      // {
+      //   test: /\.s[ac]ss$/,
+      //   use: cssLoaders('sass-loader'),
+      // },
+
       {
         test: /\.css$/,
-        use: cssLoaders(),
+        use: [
+          'style-loader',
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: { sourceMap: true },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+              config: { path: 'src/postcss.config.js' },
+            },
+          },
+        ],
       },
       {
         test: /\.s[ac]ss$/,
-        use: cssLoaders('sass-loader'),
+        use: [
+          'style-loader',
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: { sourceMap: true },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+              config: { path: 'src/postcss.config.js' },
+            },
+          },
+          {
+            loader: 'sass-loader',
+            options: { sourceMap: true },
+          },
+        ],
       },
+
       {
         test: /\.(gif|png|jpe?g|svg)$/i,
         use: [

@@ -5,6 +5,7 @@
   &__list-scrollbar {
     display: flex;
     overflow-x: auto;
+
     cursor: pointer;
 
     /* СТИЛИЗАЦИЯ ПОЛОСЫ ПРОКРУТКИ В START */
@@ -50,36 +51,37 @@
 
   &__list {
     display: flex;
-    overflow-x: auto;
     margin-top: 24px;
     margin-bottom: 56px;
+    overflow-x: auto;
     // overflow: hidden;
     // transform: scaleY(-1);
 
     /* СТИЛИЗАЦИЯ ПОЛОСЫ ПРОКРУТКИ В START */
     &::-webkit-scrollbar {
       // width: 4px;
-      height: 0px;
+      height: 0;
     }
     /* СТИЛИЗАЦИЯ ПОЛОСЫ ПРОКРУТКИ END */
   }
 
   &__item {
-    background: $main-color-bg-desc;
     min-width: 411px;
-
-    padding: 35px 50px;
-    border-radius: 25px;
     margin-right: 20px;
+    padding: 35px 50px;
+
+    background: $main-color-bg-desc;
+    border-radius: 25px;
     // transform: scaleY(-1);
   }
 
   &__item-title {
+    margin-top: 23px;
+
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
     text-transform: uppercase;
-    margin-top: 23px;
   }
 
   &__description {
@@ -119,8 +121,8 @@
 
   @media (max-width: 1439.98px) {
     .container {
-      padding-left: 0;
       padding-right: 0;
+      padding-left: 0;
     }
   }
 
@@ -145,8 +147,8 @@
 
     &__item {
       min-width: 285px;
-      padding: 20px 25px;
       margin-right: 14px;
+      padding: 20px 25px;
     }
 
     &__description {

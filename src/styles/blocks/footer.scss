@@ -8,41 +8,48 @@
   }
 
   .section__title {
-    color: $white-color;
-    text-align: left;
     margin-bottom: 18px;
+
+    text-align: left;
+    color: $white-color;
   }
 
   &__subtitle {
+    margin-bottom: 5px;
+
     font-size: 16px;
     line-height: 20px;
     color: $white-color;
-    margin-bottom: 5px;
   }
 
   &__form-input {
     width: 160px;
-    background: transparent;
+    margin-right: 20px;
+
+// opacity: 0.4;
+    padding: 2px;
+    padding-bottom: 10px;
+
     font-size: 18px;
     line-height: 22px;
     color: $white-color;
-    // opacity: 0.4;
-    padding: 2px;
-    padding-bottom: 10px;
+
+    background: transparent;
     border: none;
     border-bottom: 1px solid $pink-color-text;
-    margin-right: 20px;
   }
 
   &__confid {
     width: 100%;
     max-width: 440px;
+    margin-top: 11px;
+
     font-weight: 300;
     font-size: 16px;
     line-height: 20px;
     color: $white-color;
+
     opacity: 0.7;
-    margin-top: 11px;
 
     span {
       color: $pink-color-text;
@@ -50,16 +57,17 @@
   }
 
   &__phone {
-    color: $white-color;
+    margin-bottom: 5px;
+
     font-weight: bold;
     font-size: 22px;
     line-height: 27px;
-    margin-bottom: 5px;
+    color: $white-color;
 
     span {
       &:first-child {
-        font-size: 18px;
         font-weight: normal;
+        font-size: 18px;
       }
 
       &:last-child {
@@ -77,9 +85,10 @@
 
   &__list {
     display: flex;
-    opacity: 0.7;
-    margin: 20px 0;
     align-items: center;
+    margin: 20px 0;
+
+    opacity: 0.7;
 
     & li:first-child {
       margin-right: 14px;
@@ -100,6 +109,7 @@
   &__copyright {
     line-height: 20px;
     color: $white-color;
+
     opacity: 0.7;
   }
 
@@ -108,11 +118,12 @@
 
   @media (max-width: 1439.98px) {
     .section__inner {
-      flex-wrap: wrap;
       flex-direction: column;
+      flex-wrap: wrap;
       align-items: center;
-      text-align: center;
       padding-bottom: 60px;
+
+      text-align: center;
     }
 
     &__left {
@@ -133,8 +144,8 @@
 
     &__form-input {
       width: 100%;
-      padding-top: 20px;
       margin-right: 0;
+      padding-top: 20px;
     }
 
     &__btn {
@@ -156,6 +167,7 @@
 
     .section__title {
       width: 219px;
+
       text-align: left;
     }
 

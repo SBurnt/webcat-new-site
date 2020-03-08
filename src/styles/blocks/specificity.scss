@@ -13,21 +13,24 @@
 
   &__item {
     position: relative;
-    border-radius: 30px;
-    border: 2px solid rgba(42, 69, 124, 0.3);
+
     width: 100%;
     max-width: 440px;
     padding: 40px 40px 70px 40px;
+
+    border: 2px solid rgba(42, 69, 124, 0.3);
+    border-radius: 30px;
     // border-color: linear-gradient(306.06deg, #651b55 -30.72%, #2a457c 120.95%);
     // border-color: linear-gradient(233.5deg, #1860bb -8.16%, #720747 109.34%),
     // linear-gradient(318.85deg, #153366 3.36%, #6c0947 115.9%);
   }
 
   &__item-title {
+    margin-bottom: 10px;
+
     font-weight: bold;
     font-size: 22px;
     line-height: 27px;
-    margin-bottom: 10px;
 
     span {
       color: $pink-color-text;
@@ -42,8 +45,9 @@
 
   &__img {
     position: absolute;
-    left: 50%;
     bottom: -103px;
+    left: 50%;
+
     transform: translateX(-50%);
   }
 

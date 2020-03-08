@@ -6,11 +6,11 @@
   }
 
   &__list {
-    max-width: 1191px;
-    width: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    max-width: 1191px;
+    margin: 0 auto;
   }
 
   &__item {
@@ -21,6 +21,7 @@
 
   &__text {
     margin-left: -50px;
+
     font-size: 16px;
     line-height: 20px;
 
@@ -40,9 +41,9 @@
     }
 
     &__list {
-      max-width: 720px;
       flex-wrap: wrap;
       justify-content: space-evenly;
+      max-width: 720px;
     }
   }
 
@@ -53,6 +54,7 @@
     &__list {
       flex-direction: column;
       align-items: center;
+
       text-align: center;
 
       :last-child {

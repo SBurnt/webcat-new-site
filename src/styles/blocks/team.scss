@@ -8,27 +8,31 @@
 
   &__top-img-wrap {
     position: relative;
+
     width: 323px;
     height: 323px;
-    background-color: $gray-color-img-bg;
     margin-right: 40px;
+
+    background-color: $gray-color-img-bg;
   }
 
   &__top-img {
+    position: absolute;
+    bottom: 35px;
+    left: 51px;
+
     width: 216px;
     height: 216px;
-    position: absolute;
-    left: 51px;
-    bottom: 35px;
 
     background: linear-gradient(233.5deg, #1860bb -8.16%, #720747 109.34%),
-      linear-gradient(318.85deg, #153366 3.36%, #6c0947 115.9%);
+    linear-gradient(318.85deg, #153366 3.36%, #6c0947 115.9%);
     border-radius: 60px;
     transform: rotate(-152deg);
   }
 
   &__top-name {
     display: block;
+
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
@@ -37,6 +41,7 @@
 
   &__top-position {
     display: block;
+
     font-weight: 300;
     font-size: 18px;
     line-height: 22px;
@@ -44,18 +49,22 @@
 
   &__top-desc {
     position: relative;
+
+    width: 783px;
     padding: 32px 57px;
+
     background: $main-color-bg-desc;
     border-radius: 30px;
-    width: 783px;
 
     &:before {
-      content: '';
+      content: "";
+      position: absolute;
+      top: 38px;
+      right: 100%;
+
       width: 0;
       height: 0;
-      right: 100%;
-      top: 38px;
-      position: absolute;
+
       border-top: 16px solid transparent;
       border-right: 28px solid $main-color-bg-desc;
       border-bottom: 16px solid transparent;
@@ -64,6 +73,7 @@
 
   &__top-text {
     margin-top: 12px;
+
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -94,6 +104,7 @@
     &:last-child .team__bottom-img-wrap {
       width: 142px;
       height: 142px;
+
       border-radius: 40px;
       transform: rotate(109.37deg);
     }
@@ -101,27 +112,32 @@
 
   &__bottom-img-wrap {
     position: relative;
+
     width: 150px;
     height: 150px;
-    background-color: $gray-color-img-bg;
     margin-bottom: 20px;
+
+    background-color: $gray-color-img-bg;
 
     span {
       position: absolute;
       top: 25%;
       left: 25%;
+
       font-weight: 900;
       font-size: 56px;
       line-height: 68px;
       text-align: center;
+
       background: -o-linear-gradient(306.06deg, #1860bb -30.72%, #720747 120.95%),
-        -o-linear-gradient(181.14deg, #283956 -27.18%, #4a0a32 120.71%), #c4c4c4;
-      background: linear-gradient(306.06deg, #1860bb -30.72%, #720747 120.95%),
-        linear-gradient(181.14deg, #283956 -27.18%, #4a0a32 120.71%), #c4c4c4;
+      -o-linear-gradient(181.14deg, #283956 -27.18%, #4a0a32 120.71%), #c4c4c4;
+      background:    linear-gradient(306.06deg, #1860bb -30.72%, #720747 120.95%),
+      linear-gradient(181.14deg, #283956 -27.18%, #4a0a32 120.71%), #c4c4c4;
       -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+              background-clip: text;
       transform: rotate(-109.37deg);
+
+      -webkit-text-fill-color: transparent;
     }
   }
 
@@ -153,8 +169,8 @@
     }
 
     &__top-desc {
-      padding: 32px 50px;
       width: 560px;
+      padding: 32px 50px;
     }
 
     &__bottom-list {
@@ -177,18 +193,20 @@
     }
 
     &__top-img {
+      top: 50%;
+      bottom: 50%;
+      left: 50%;
+
       width: 138px;
       height: 138px;
-      top: 50%;
-      left: 50%;
-      bottom: 50%;
+
       border-radius: 43px;
       transform: translate(-50%, -50%) rotate(-152deg);
     }
 
     &__top-desc {
-      padding: 32px 40px;
       width: 384px;
+      padding: 32px 40px;
     }
 
     &__bottom {
@@ -212,20 +230,22 @@
     }
 
     &__top-desc {
-      padding: 25px 30px;
       width: 100%;
+      padding: 25px 30px;
       // max-width: ;
 
       &:before {
-        width: 0;
-        height: 0;
-        right: 0;
         top: auto;
+        right: 0;
         bottom: 100%;
         left: 35%;
-        border-left: 16px solid transparent;
-        border-bottom: 20px solid rgba(203, 233, 229, 0.3);
+
+        width: 0;
+        height: 0;
+
         border-right: 16px solid transparent;
+        border-bottom: 20px solid rgba(203, 233, 229, 0.3);
+        border-left: 16px solid transparent;
       }
     }
 
@@ -251,8 +271,9 @@
       &:last-child .team__bottom-img-wrap {
         width: 120px;
         height: 120px;
-        border-radius: 40px;
         margin: 9px 0 20px 5px;
+
+        border-radius: 40px;
         transform: rotate(109.37deg);
       }
     }
