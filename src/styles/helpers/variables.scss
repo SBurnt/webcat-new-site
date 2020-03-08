@@ -49,6 +49,11 @@ $gray-color-img-bg: rgba(196, 196, 196, 0.3);
   }
 
   @media (max-width: 374.98px) {
+
+    .section__inner {
+      padding: 40px 0 60px;
+    }
+
     .btn {
       padding: 16px 47px;
     }
@@ -57,12 +62,17 @@ $gray-color-img-bg: rgba(196, 196, 196, 0.3);
 
 html {
   box-sizing: border-box;
+
+  &.overflow-hidden {
+    overflow: hidden;
+  }
 }
 
 body {
   font-family: 'Montserrat', 'Times New Roman', Arial, sans-serif;
   color: $black-color-text;
-  // width: 1440px;
+  overflow-x: hidden;
+
   &.overflow-hidden {
     overflow: hidden;
   }
