@@ -62,14 +62,32 @@ btnFeedback.forEach(items => {
 });
 // ---------- show feedback end ----------
 
-// var mySwiper = new Swiper('.js-swiper-working', {
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-//   freeMode: true,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-// });
+var mySwiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  freeMode: true,
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    type: 'progressbar',
+  },
+});
 
 // mySwiper();
