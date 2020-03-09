@@ -4,7 +4,9 @@
   display: none;
   overflow: hidden;
 
-  background: $main-color-bg;
+  // background: $main-color-bg;
+  background: url(../assets/img/bg_popup.png) no-repeat center;
+  background-size: cover;
 
   &.active {
     position: fixed;
@@ -22,14 +24,14 @@
     flex-direction: column;
     justify-content: space-between;
 
-// position: relative;
+    // position: relative;
     height: 100vh;
   }
 
   &__top {
     z-index: 5;
 
-// position: absolute;
+    // position: absolute;
     // top: 50px;
 
     align-self: center;
@@ -67,7 +69,7 @@
   &__form-input {
     width: 100%;
 
-// opacity: 0.4;
+    // opacity: 0.4;
     padding: 2px;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -96,7 +98,7 @@
   }
 
   &::after {
-    content: "";
+    // content: "";
     position: absolute;
     top: -335px;
     left: 60px;
@@ -107,23 +109,23 @@
 
     background: #f52d9e;
 
-// filter: blur(250px);
+    // filter: blur(250px);
     border-radius: 90px;
 
-// transform: rotate(45deg);
+    // transform: rotate(45deg);
     -webkit-transform: matrix(0.62, 0.78, -0.78, 0.62, 0, 0);
-            transform: matrix(0.62, 0.78, -0.78, 0.62, 0, 0);
+    transform: matrix(0.62, 0.78, -0.78, 0.62, 0, 0);
     opacity: 0.3;
   }
 
   &:before {
-    content: "";
+    // content: "";
     position: absolute;
     top: 0;
     right: -155px;
     z-index: 0;
 
-// width: 850px;
+    // width: 850px;
     // height: 1141px;
 
     width: 609px;
@@ -131,12 +133,12 @@
 
     background: #4e9cff;
 
-// filter: blur(250px);
+    // filter: blur(250px);
     border-radius: 90px;
 
-// transform: rotate(-19deg);
+    // transform: rotate(-19deg);
     -webkit-transform: matrix(0.11, 0.99, 0.99, -0.11, 0, 0);
-            transform: matrix(0.11, 0.99, 0.99, -0.11, 0, 0);
+    transform: matrix(0.11, 0.99, 0.99, -0.11, 0, 0);
     opacity: 0.3;
   }
 }

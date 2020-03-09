@@ -1,5 +1,7 @@
 .customers {
-  background: $main-color-bg;
+  // background: $main-color-bg;
+  background: url(../assets/img/bg_customers.png) no-repeat center;
+  background-size: cover;
 
   .section__title {
     color: $white-color;

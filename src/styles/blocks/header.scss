@@ -1,6 +1,10 @@
 .header {
-  background: $main-color-bg url(../assets/img/header-backgroud.png) no-repeat right center;
-  background-size: contain;
+  // background: $main-color-bg url(../assets/img/header-backgroud.png) no-repeat;
+  background:
+    url(../assets/img/header-backgroud.png) no-repeat,
+    url(../assets/img/bg_header.png) no-repeat;
+    background-position: right center, center;
+  background-size: contain, cover;
 
   &__inner {
     position: relative;
@@ -54,7 +58,7 @@
     max-width: 1145px;
 
     background: radial-gradient(122.88% 958.33% at 49.96% 270%, #1860bb 0%, #720747 100%),
-    radial-gradient(86.33% 1615.09% at 34.15% 50%, #1860bb 0%, #720747 100%);
+      radial-gradient(86.33% 1615.09% at 34.15% 50%, #1860bb 0%, #720747 100%);
     border-radius: 50px;
     box-shadow: 0 0 90px rgba(21, 17, 45, 0.4);
     transform: translateX(-50%);
@@ -81,11 +85,10 @@
     display: none;
   }
 
-  @media (max-width: 1919.98px) {
-  }
+  @media (max-width: 1919.98px) {}
 
   @media (max-width: 1439.98px) {
-    background-size: 582px auto;
+    // background-size: 582px auto;
 
     &__inner {
       height: 590px;
@@ -105,7 +108,7 @@
   }
 
   @media (max-width: 1023.98px) {
-    background-position: right bottom;
+    background-position: right bottom, center;
 
     &__inner {
       justify-content: flex-start;
@@ -125,7 +128,8 @@
   }
 
   @media (max-width: 767.98px) {
-    background-size: 374px auto;
+    background-position: right 85%, center;
+    // background-size: 374px auto;
 
     &__inner {
       height: 781px;
@@ -141,6 +145,7 @@
       &__item {
         &:first-child {
           margin-right: 0;
+
           &:before {
             display: none;
           }
@@ -172,7 +177,8 @@
   }
 
   @media (max-width: 374.98px) {
-    background-size: 319px auto;
+    background-position: right 93%, center;
+    // background-size: 319px auto;
 
     &__inner {
       height: 740px;

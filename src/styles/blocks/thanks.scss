@@ -4,7 +4,9 @@
   display: none;
   overflow: hidden;
 
-  background: $main-color-bg;
+  // background: $main-color-bg;
+  background: url(../assets/img/bg_popup.png) no-repeat center;
+  background-size: cover;
 
   .section__inner {
     display: flex;
@@ -57,7 +59,7 @@
   }
 
   &::after {
-    content: "";
+    // content: "";
     position: absolute;
     top: -335px;
     left: 60px;
@@ -67,35 +69,35 @@
     height: 1000px;
 
     background: #f52d9e;
-// filter: blur(250px);
+    // filter: blur(250px);
     border-radius: 90px;
 
-// transform: rotate(45deg);
+    // transform: rotate(45deg);
     -webkit-transform: matrix(0.62, 0.78, -0.78, 0.62, 0, 0);
-            transform: matrix(0.62, 0.78, -0.78, 0.62, 0, 0);
+    transform: matrix(0.62, 0.78, -0.78, 0.62, 0, 0);
     opacity: 0.3;
   }
 
   &:before {
-    content: "";
+    // content: "";
     position: absolute;
     top: 0;
     right: -155px;
     z-index: 0;
 
-// width: 850px;
+    // width: 850px;
     // height: 1141px;
 
     width: 609px;
     height: 950px;
 
     background: #4e9cff;
-// filter: blur(250px);
+    // filter: blur(250px);
     border-radius: 90px;
 
-// transform: rotate(-19deg);
+    // transform: rotate(-19deg);
     -webkit-transform: matrix(0.11, 0.99, 0.99, -0.11, 0, 0);
-            transform: matrix(0.11, 0.99, 0.99, -0.11, 0, 0);
+    transform: matrix(0.11, 0.99, 0.99, -0.11, 0, 0);
     opacity: 0.3;
   }
 }

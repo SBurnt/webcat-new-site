@@ -1,5 +1,7 @@
 .footer {
-  background: $main-color-bg;
+  // background: $main-color-bg;
+  background: url(../assets/img/bg_footer.png) no-repeat center;
+  background-size: cover;
 
   .section__inner {
     display: flex;

@@ -5,9 +5,10 @@
 
 module.exports = {
   plugins: [
-    require('autoprefixer'),
+    require('autoprefixer')
     // require('css-mqpacker'),
-    require('cssnano')({
+    // require('cssnano')
+    ({
       preset: [
         'default',
         {

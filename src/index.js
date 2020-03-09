@@ -1,4 +1,6 @@
 import * as $ from 'jquery';
+import Swiper from 'swiper';
+
 import './styles/main.scss';
 
 // Browser compatibility ie11 (forEach)
@@ -59,3 +61,15 @@ btnFeedback.forEach(items => {
   });
 });
 // ---------- show feedback end ----------
+
+// var mySwiper = new Swiper('.js-swiper-working', {
+//   slidesPerView: 3,
+//   spaceBetween: 30,
+//   freeMode: true,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+// });
+
+// mySwiper();
