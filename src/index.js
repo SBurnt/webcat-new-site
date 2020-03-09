@@ -64,30 +64,49 @@ btnFeedback.forEach(items => {
 
 var mySwiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
-  spaceBetween: 30,
-  freeMode: true,
+  spaceBetween: 10,
+  // freeMode: true,
+  // loop: true,
+  centeredSlides: true,
+  clickable: true,
+  type: 'progressbar',
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows : true,
+  },
   breakpoints: {
     // when window width is >= 320px
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 10,
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 0,
     },
     // when window width is >= 480px
-    480: {
+    1024: {
       slidesPerView: 3,
       spaceBetween: 10,
     },
     // when window width is >= 640px
-    640: {
-      slidesPerView: 3,
-      spaceBetween: 10,
+    1440: {
+      slidesPerView: 3.5,
+      spaceBetween: 20,
+    },
+    1920: {
+      slidesPerView: 4.3,
+      spaceBetween: 20,
     },
   },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    type: 'progressbar',
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    // hide: true,
   },
+  
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   clickable: true,
+  //   type: 'progressbar',
+  // },
 });
-
-// mySwiper();
