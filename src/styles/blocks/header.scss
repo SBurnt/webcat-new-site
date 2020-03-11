@@ -1,9 +1,9 @@
 .header {
   // background: $main-color-bg url(../assets/img/header-backgroud.png) no-repeat;
   background:
-    url(../assets/img/header-backgroud.png) no-repeat,
+    url(../assets/img/header-backgroud3.png) no-repeat,
     url(../assets/img/bg_header.png) no-repeat;
-    background-position: right center, center;
+  background-position: right center, center;
   background-size: contain, cover;
 
   &__inner {
@@ -66,19 +66,27 @@
 
   &__nav-items {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 60px;
     margin: 0 auto;
   }
 
   &__cell {
+    flex-grow: 1;
+    flex-basis: 0;
     padding: 20px 0;
-
-    font-size: 16px;
-    line-height: 20px;
+    text-align: center;
   }
 
   &__cell-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
     color: $white-color;
+
+    &:hover {
+      font-weight: 500;
+    }
   }
 
   &__burger {

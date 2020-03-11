@@ -20,6 +20,11 @@
 
   &__img {
     height: 30px;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   &__list:last-child &__item &__img {
@@ -38,9 +43,9 @@
   }
 
   @media (max-width: 1439.98px) {
-    // .section__inner {
-    //   padding: 61px 0 80px;
-    // }
+    &__img {
+      opacity: 0.7;
+    }
   }
 
   @media (max-width: 1023.98px) {
