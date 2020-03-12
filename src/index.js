@@ -122,3 +122,21 @@ var mySwiper = new Swiper('.swiper-container', {
   //   type: 'progressbar',
   // },
 });
+
+var hiddenWorking = document.querySelector('#specificity');
+var btnWorking = document.querySelector('.js-menu-working');
+
+function handleButtonClick() {
+  hiddenWorking.scrollIntoView({ block: 'start', behavior: 'smooth' });
+}
+
+btnWorking.addEventListener('click', handleButtonClick);
+
+var hiddenTeam = document.querySelector('#team');
+var btnTeam = document.querySelector('.js-team');
+
+function handleButtonClickTeam() {
+  hiddenTeam.scrollIntoView({ block: 'start', behavior: 'smooth' });
+}
+
+btnTeam.addEventListener('click', handleButtonClickTeam);
