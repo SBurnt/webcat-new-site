@@ -18,12 +18,12 @@
     max-width: 440px;
     padding: 40px 40px 70px 40px;
 
-    // border: 2px solid rgba(42, 69, 124, 0.3);
-    border: 2px solid transparent;
+    border: 2px solid rgba(42, 69, 124, 0.3);
+    // border: 2px solid transparent;
     border-radius: 30px;
 
-    border-image: linear-gradient(315deg, rgba(42, 69, 124, 1) 0%, rgba(101, 27, 85, 1) 100%);
-    border-image-slice: 1;
+    // border-image: linear-gradient(315deg, rgba(42, 69, 124, 1) 0%, rgba(101, 27, 85, 1) 100%);
+    // border-image-slice: 1;
   }
 
   &__item-title {
