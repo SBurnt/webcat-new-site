@@ -87,17 +87,17 @@
     }
 
     &__item {
-      padding: 30px 30px 70px 30px;
+      padding: 30px 30px 60px 30px;
     }
 
     &__item:not(:last-child) {
-      margin-bottom: 115px;
+      margin-bottom: 125px;
     }
   }
 
   @media (max-width: 374.98px) {
     &__item {
-      padding: 30px 20px 70px 20px;
+      padding: 30px 20px 60px 20px;
     }
 
     &__item-title br {

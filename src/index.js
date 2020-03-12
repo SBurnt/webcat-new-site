@@ -92,21 +92,21 @@ var mySwiper = new Swiper('.swiper-container', {
       spaceBetween: 10,
     },
     768: {
-      slidesPerView: 2,
-      spaceBetween: 10,
+      slidesPerView: 2.0,
+      spaceBetween: 20,
     },
-    // when window width is >= 480px
     1024: {
-      slidesPerView: 3,
-      spaceBetween: 10,
+      slidesPerView: 2.5,
+      spaceBetween: 20,
     },
-    // when window width is >= 640px
+    1280: {
+      slidesPerView: 3.2,
+    },
     1440: {
       slidesPerView: 3.5,
       spaceBetween: 20,
     },
     1920: {
-      slidesPerGroup: 4,
       slidesPerView: 3.5,
       spaceBetween: 20,
     },

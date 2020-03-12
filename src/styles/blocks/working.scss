@@ -50,7 +50,7 @@
   // }
   // list-scrollbar item-scrollbar дублируем для отдельной полосы прокрутки END
 
-  .swiper-container-horizontal>.swiper-scrollbar {
+  .swiper-container-horizontal > .swiper-scrollbar {
     // position: absolute;
     // left: 1%;
     top: 0px;
@@ -73,7 +73,7 @@
     // width: 100%;
     // position: relative;
     background: rgb(206, 4, 118);
-    box-shadow: 0 0 5px 2px rgba(206, 4, 118, 0.3)
+    box-shadow: 0 0 5px 2px rgba(206, 4, 118, 0.3);
     // border-radius: 10px;
     // left: 0;
     // top: 0;
@@ -81,11 +81,10 @@
 
   &__list {
     // display: flex;
-    margin-top: 24px;
+    margin-top: 27px;
     margin-bottom: 40px;
     // margin-left: 20px;
     // overflow-x: auto;
-
 
     /* СТИЛИЗАЦИЯ ПОЛОСЫ ПРОКРУТКИ В START */
     // &::-webkit-scrollbar {
@@ -152,21 +151,25 @@
 
   @media (max-width: 1439.98px) {
     .container {
-      padding-right: 0;
-      padding-left: 0;
+      padding: 0;
     }
   }
 
-  @media (max-width: 1023.98px) {}
+  @media (max-width: 1023.98px) {
+  }
 
   @media (max-width: 767.98px) {
+    .swiper-scrollbar-drag {
+      box-shadow: 0 0 5px 1px rgba(206, 4, 118, 0.3);
+    }
+
     // &__list-scrollbar,
     // &__list {
     //   margin-left: 20px;
     // }
 
     &__list {
-      margin-top: 10px;
+      margin-top: 20px;
       margin-bottom: 30px;
     }
 
@@ -190,6 +193,10 @@
     // &__item-scrollbar {
     //   // min-width: 250px;
     // }
+
+    &__list {
+      margin-top: 13px;
+    }
 
     &__item {
       // min-width: 250px;
