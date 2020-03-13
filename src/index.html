@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>newWebcat</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
     <meta name="Description" content="webcat" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
   </head>
@@ -33,7 +33,10 @@
             </button>
           </div>
           <div class="header__middle">
-            <h1 class="header__title">Гарантированно<br> снизим стоимость заявки и увеличим их количество</h1>
+            <h1 class="header__title">
+              Гарантированно<br />
+              снизим стоимость заявки и увеличим их количество
+            </h1>
             <span class="header__desc">по сравнению с вашими текущими показателями</span>
             <button class="btn header__btn js-feedback-toggle">Обсудить детали</button>
           </div>
@@ -55,7 +58,7 @@
                 <a href="#team" class="header__cell-link">Наша команда</a>
               </li>
               <li class="header__cell">
-                <a class="header__cell-link js-menu-working">Формат работы</a>
+                <a href="#specificity" class="header__cell-link js-menu-working">Формат работы</a>
               </li>
             </ul>
           </nav>
@@ -189,16 +192,6 @@
         <div class="container">
           <div class="section__inner">
             <h3 class="section__title">Как мы работем</h3>
-            <!-- <div>
-              <ul class="working__list-scrollbar">
-              <li class="working__item-scrollbar"></li>
-              <li class="working__item-scrollbar"></li>
-              <li class="working__item-scrollbar"></li>
-              <li class="working__item-scrollbar"></li>
-              <li class="working__item-scrollbar"></li>
-            </ul>
-            </div> -->
-
             <div class="swiper-container js-swiper-working">
               <div class="swiper-scrollbar"></div>
               <ul class="swiper-wrapper working__list">
@@ -474,7 +467,7 @@
               <button class="btn footer__btn" type="button">Отправить</button>
             </form>
             <p class="footer__confid">
-              Отправляя данные, вы автоматически соглашаетесь с <span>условиями конфиденциальности</span>
+              Отправляя данные, вы автоматически соглашаетесь с <span class="js-confidentiality-toggle">условиями конфиденциальности</span>
             </p>
           </div>
           <div class="footer__right">
@@ -618,7 +611,7 @@
                   <a href="#working" class="menu__cell-link js-menu-link">Как мы работаем</a>
                 </li>
                 <li class="menu__cell">
-                  <a class="menu__cell-link js-menu-link js-team">Наша команда</a>
+                  <a href="#team" class="menu__cell-link js-menu-link js-team">Наша команда</a>
                 </li>
                 <li class="menu__cell">
                   <a href="#specificity" class="menu__cell-link js-menu-link">Формат работы</a>
@@ -631,6 +624,53 @@
             <span class="header__burger-text">Закрыть меню</span>
           </button>
           <!-- <button class="menu__btn" type="button">&#10006;&nbsp;&nbsp;Закрыть меню</button> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="confidentiality">
+      <div class="container">
+        <div class="section__inner">
+          <div class="confidentiality__content">
+            <p>
+              Подбор будет осуществляться из следующих банков: Беларусбанк, МТБанк, ИдеяБанк, Банк Решение,
+              БПС-Сбербанк, Банк Добрабыт, Технобанк, Альфа-Банк, Белагропромбанк
+            </p>
+            <br />
+            <p>
+              Прохождение теста и заполнение формы заявки не гарантирует на 100% одобрение при выдаче кредита. Все
+              данные передаются для проверки и оценки.
+            </p>
+            <br />
+            <p>
+              Все размещенные материалы на сайте имеют информационный характер и охраняются законадательством об
+              авторском праве. Владелец сайта не является финансовой организацией и действует в интересах ООО "ВебКет",
+              УНП 192975123, г. Минск, ул. Казица 11а, оф. 801А.
+            </p>
+            <br />
+            <h4>Согласие на обработку персональных данных</h4>
+            <br />
+            <p></p>
+            Оформляя настоящую заявку, Вы как потенциальный клиент, даете согласие:<br /><br />
+            1.1. На обработку своих персональных данных, включая сбор, систематизацию, накопление, хранение, обработку,
+            уточнение (обновление, изменение), сопоставление, использование, распространение (в том числе передача),
+            обезличивание, блокирование, уничтожение, трансграничную передачу персональных данных, а также осуществление
+            любых иных действий с персональными данными с учетом действующего законодательства, в том числе на передачу
+            персональных данных Клиента и сведений о заключаемом договоре (далее – Договор), его условиях и исполнении
+            обязательств Клиентом по нему третьим лицам, привлекаемым для: • выполнения звонков Клиенту, • направления
+            рекламных предложений, а также выполнения иных не противоправных действий, направленных на исполнение
+            Клиентом обязательств по Договору и/или оценку вероятности их исполнения (включая оценку правоспособности и
+            кредитоспособности Клиента).<br /><br />
+            1.2. На получение рекламных предложений от ООО "Вебкет".<br /><br />
+            1.3. На обработку информации, указанной выше и переданной третьим лицам, а также информации о Клиенте
+            (включая персональные данные), имеющейся в распоряжении третьих лиц, и получение Банком информации о Клиенте
+            от третьих лиц с правом ее дальнейшей обработки согласно п.1.1. настоящего согласия.<br /><br />
+            1.4. На осуществление аудиозаписи телефонных переговоров, и на использование данных материалов в качестве
+            доказательств в случае возникновения спора. Настоящее согласие действует до момента его отзыва Клиентом
+            путем направления соответствующего письменного уведомления ООО "ВебКет" по следующему адресу электронной
+            почты: info@webcat.by
+          </div>
+          <button class="btn confidentiality__btn-back js-confidentiality-toggle" type="button">Назад</button>
         </div>
       </div>
     </section>
