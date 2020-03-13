@@ -1,5 +1,7 @@
-import * as $ from 'jquery';
-import Swiper from 'swiper';
+// import * as $ from 'jquery';
+
+import './js/swiper';
+import "./js/smooth-scroll-menu";
 
 import './styles/main.scss';
 
@@ -15,22 +17,11 @@ if (window.NodeList && !NodeList.prototype.forEach) {
   };
 }
 
-// одноременный scrollbar в блоке working
-// $(function() {
-//   $('.working__list-scrollbar').scroll(function() {
-//     $('.working__list').scrollLeft($('.working__list-scrollbar').scrollLeft());
-//   });
-//   $('.working__list').scroll(function() {
-//     $('.working__list-scrollbar').scrollLeft($('.working__list').scrollLeft());
-//   });
-// });
-
 const menu = document.querySelector('.menu');
 const menuBtn = document.querySelectorAll('.js-burger-toggle');
 const menuLink = document.querySelectorAll('.js-menu-link');
 const feedback = document.querySelector('.feedback');
 const btnFeedback = document.querySelectorAll('.js-feedback-toggle');
-// const menuBtnСhangeIcon = document.querySelector('.menu .js-burger-toggle');
 const html = document.querySelector('html');
 const body = document.querySelector('body');
 
@@ -61,82 +52,3 @@ btnFeedback.forEach(items => {
   });
 });
 // ---------- show feedback end ----------
-
-var mySwiper = new Swiper('.swiper-container', {
-  slidesPerView: 1.1,
-  spaceBetween: 5,
-  // freeMode: true,
-  // loop: true,
-  // centeredSlides: true,
-  slidesPerGroup: 1,
-  clickable: true,
-  type: 'progressbar',
-  // effect: 'coverflow',
-  // coverflowEffect: {
-  //   rotate: 50,
-  //   stretch: 0,
-  //   depth: 100,
-  //   modifier: 1,
-  //   slideShadows : true,
-  // },
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: true,
-    // stopOnLastSlide: true,
-    // reverseDirection: true,
-  },
-  breakpoints: {
-    // when window width is >= 375px
-    375: {
-      slidesPerView: 1.2,
-      spaceBetween: 10,
-    },
-    768: {
-      slidesPerView: 2.0,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 2.5,
-      spaceBetween: 20,
-    },
-    1280: {
-      slidesPerView: 3.2,
-    },
-    1440: {
-      slidesPerView: 3.5,
-      spaceBetween: 20,
-    },
-    1920: {
-      slidesPerView: 3.5,
-      spaceBetween: 20,
-    },
-  },
-  scrollbar: {
-    el: '.swiper-scrollbar',
-    // hide: true,
-  },
-
-  // pagination: {
-  //   el: '.swiper-pagination',
-  //   clickable: true,
-  //   type: 'progressbar',
-  // },
-});
-
-var hiddenWorking = document.querySelector('#specificity');
-var btnWorking = document.querySelector('.js-menu-working');
-
-function handleButtonClick() {
-  hiddenWorking.scrollIntoView({ block: 'start', behavior: 'smooth' });
-}
-
-btnWorking.addEventListener('click', handleButtonClick);
-
-var hiddenTeam = document.querySelector('#team');
-var btnTeam = document.querySelector('.js-team');
-
-function handleButtonClickTeam() {
-  hiddenTeam.scrollIntoView({ block: 'start', behavior: 'smooth' });
-}
-
-btnTeam.addEventListener('click', handleButtonClickTeam);

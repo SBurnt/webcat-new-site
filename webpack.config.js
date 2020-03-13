@@ -117,6 +117,12 @@ module.exports = {
   module: {
     rules: [
       // {
+      //   exclude: [/node_modules\/(?!(swiper|dom7)\/).*/, /\.test\.jsx?$/],
+      //   test: /\.jsx?$/,
+      //   use: [{ loader: 'babel-loader' }],
+      // },
+
+      // {
       //   test: /\.css$/,
       //   use: cssLoaders(),
       // },
@@ -124,7 +130,6 @@ module.exports = {
       //   test: /\.s[ac]ss$/,
       //   use: cssLoaders('sass-loader'),
       // },
-
       {
         test: /\.css$/,
         use: [
@@ -165,7 +170,6 @@ module.exports = {
           },
         ],
       },
-
       {
         test: /\.(gif|png|jpe?g|svg)$/i,
         use: [
