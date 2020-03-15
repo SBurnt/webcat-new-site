@@ -202,6 +202,7 @@ body {
   background: linear-gradient(180deg, #f52d9e 0%, rgb(206, 4, 118) 100%);
   border: none;
   border-radius: 100px;
+  transition: box-shadow 0.5s;
 
   &:hover {
     box-shadow: 0 0 40px rgba(206, 4, 118, 0.6);
