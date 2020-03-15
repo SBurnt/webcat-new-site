@@ -1,5 +1,6 @@
 // import Swiper from 'swiper';
 import Swiper from '../../node_modules/swiper/js/swiper';
+import '../../node_modules/swiper/css/swiper.min.css';
 // var Swiper = require('../../node_modules/swiper/js/swiper.js');
 
 var mySwiper = new Swiper('.swiper-container', {
