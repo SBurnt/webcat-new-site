@@ -3,12 +3,15 @@
 $usertel = $_POST['tel'];
 $username = $_POST['name'];
 $userdate = date('Y-m-d H:i:s');
+echo 'usertel ' . $usertel;
+echo ' username ' .  $username;
+echo ' userdate ' .  $userdate;
 
 //для почты
 $sendto = 'zip2004zip@mail.ru';
 
 // Формирование заголовка письма
-$subject = "Заявка webcat)))";
+$subject = "Заявка new webcat";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
 $headers .= "From: <my-works@1bank.by>\r\n"; // от кого письмо

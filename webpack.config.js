@@ -107,6 +107,10 @@ module.exports = {
         from: path.resolve(__dirname, 'src/assets/img'),
         to: path.resolve(__dirname, 'dist/assets/img'),
       },
+      {
+        from: path.resolve(__dirname, 'src/send'),
+        to: path.resolve(__dirname, 'dist/send'),
+      },
       // { from: path.resolve(__dirname, 'src/assets/fonts'), to: path.resolve(__dirname, 'dist/assets/fonts') },
     ]),
     new MiniCssExtractPlugin({
