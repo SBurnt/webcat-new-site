@@ -8,13 +8,13 @@ echo ' username ' .  $username;
 echo ' userdate ' .  $userdate;
 
 //для почты
-$sendto = 'zip2004zip@mail.ru';
+$sendto = 's.pashkevich@webcat.by';
 
 // Формирование заголовка письма
-$subject = "Заявка new webcat";
+$subject = "new webcat site";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
-$headers .= "From: <my-works@1bank.by>\r\n"; // от кого письмо
+$headers .= "From: <new-webcat@webcat.by>\r\n"; // от кого письмо
 
 // Формирование тела письма
 $msg  = "<html><body style='font-family:Arial,sans-serif;'>";
