@@ -18,8 +18,8 @@
 // кроссбраузерный вариант с ie11:
 // собираем все якоря; устанавливаем время анимации и количество кадров
 const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
-  animationTime = 300,
-  framesCount = 20;
+  animationTime = 700,
+  framesCount = 50;
 
 anchors.forEach(function(item) {
   // каждому якорю присваиваем обработчик события
