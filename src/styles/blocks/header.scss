@@ -1,7 +1,5 @@
 .header {
-  background:
-    url(../assets/img/header-hands.png) no-repeat,
-    url(../assets/img/bg_header.png) no-repeat;
+  background: url(../assets/img/header-hands.png) no-repeat, url(../assets/img/bg_header.png) no-repeat;
   background-position: right center, center;
   background-size: contain, cover;
 
@@ -92,7 +90,8 @@
     display: none;
   }
 
-  @media (max-width: 1919.98px) {}
+  @media (max-width: 1919.98px) {
+  }
 
   @media (max-width: 1439.98px) {
     // background-size: 582px auto;
@@ -101,16 +100,12 @@
       height: 590px;
     }
 
-    &__navigation {
-      display: none;
-    }
-
-    &__burger {
-      display: flex;
-    }
-
     &__title {
       width: 461px;
+    }
+
+    &__nav-items {
+      padding: 0 20px;
     }
   }
 
@@ -120,6 +115,14 @@
     &__inner {
       justify-content: flex-start;
       height: 996px;
+    }
+
+    &__navigation {
+      display: none;
+    }
+
+    &__burger {
+      display: flex;
     }
 
     &__title {
