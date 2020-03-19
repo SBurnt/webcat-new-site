@@ -81,9 +81,16 @@
     line-height: 20px;
     color: $white-color;
 
-    &:hover {
-      font-weight: 500;
+    &:hover,
+    &:focus {
+      font-weight: 600;
     }
+  }
+
+  a {
+    border: none;
+    outline: none;
+    outline-style: none;
   }
 
   &__burger {
