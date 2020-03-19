@@ -1,4 +1,4 @@
-import Inputmask from 'inputmask';
+// import Inputmask from 'inputmask';
 
 const btnSendFormFooter = document.querySelector('.js-send-form-footer');
 const btnSendFormFeedback = document.querySelector('.js-send-form-feedback');
@@ -6,25 +6,26 @@ const formFooter = document.querySelector('.footer__form');
 const formFeedback = document.querySelector('.feedback__form');
 const thanks = document.querySelector('.thanks');
 const btnThanksBack = document.querySelector('.js-thanks__btn');
-const phone = document.querySelectorAll('.phone-input');
+// const phone = document.querySelectorAll('.phone-input');
 const html = document.querySelector('html');
 const body = document.querySelector('body');
 
-Inputmask({
-  mask: '+375 (XY) 999-99-99',
-  definitions: {
-    X: {
-      validator: '2|3|4',
-      placeholder: '_',
-    },
-    Y: {
-      validator: '3|5|9|4',
-      placeholder: '_',
-    },
-  },
-}).mask(phone);
+// Inputmask({
+//   mask: '+375 (XY) 999-99-99',
+//   definitions: {
+//     X: {
+//       validator: '2|3|4',
+//       placeholder: '_',
+//     },
+//     Y: {
+//       validator: '3|5|9|4',
+//       placeholder: '_',
+//     },
+//   },
+// }).mask(phone);
 
-const regTel = /\+\d{3} \((25|29|33|44)\) \d{3}-\d{2}-\d{2}/;
+// const regTel = /\+\d{3} \((25|29|33|44)\) \d{3}-\d{2}-\d{2}/;
+const regTel = /\+\d{9,}|\d{9,}/;
 
 btnSendFormFooter.addEventListener('click', e => {
   // e.preventDefault();
@@ -32,23 +33,27 @@ btnSendFormFooter.addEventListener('click', e => {
   let error = 0;
   const inputName = document.querySelector('.footer__form input[name=name]');
   const inputTel = document.querySelector('.footer__form input[name=tel]');
-  console.log('inputName ', inputName.value);
-  console.log('inputTel ', inputTel.value);
+  const telOk = regTel.exec(inputTel.value);
+
+  // console.log('inputName ', inputName.value);
+  // console.log('inputTel ', inputTel.value);
 
   if (inputName.value == '') {
     error++;
-    inputName.style.border = '1px solid #ff0000';
+    inputName.style.borderBottomColor = '#ff5555';
+    inputName.style.color = '#ff5555';
   } else {
-    inputName.style.border = 'none';
-    inputName.style.borderBottom = '1px solid #ce0476';
+    inputName.style.borderBottomColor = '#ce0476';
+    inputName.style.color = '#fff';
   }
 
-  if (regTel.exec(inputTel.value) == null) {
+  if (!telOk) {
     error++;
-    inputTel.style.border = '1px solid #ff0000';
+    inputTel.style.borderBottomColor = '#ff5555';
+    inputTel.style.color = '#ff5555';
   } else {
-    inputTel.style.border = 'none';
-    inputTel.style.borderBottom = '1px solid #ce0476';
+    inputTel.style.borderBottomColor = '#ce0476';
+    inputTel.style.color = '#fff';
   }
 
   if (error > 0) {
@@ -65,6 +70,8 @@ btnSendFormFooter.addEventListener('click', e => {
       thanks.classList.toggle('active');
       html.classList.toggle('overflow-hidden');
       body.classList.toggle('overflow-hidden');
+      inputName.value = '';
+      inputTel.value = '';
     }
   };
   xmlHttp.open('POST', './send/send-base.php');
@@ -77,23 +84,27 @@ btnSendFormFeedback.addEventListener('click', e => {
   let error = 0;
   const inputName = document.querySelector('.feedback__form input[name=name]');
   const inputTel = document.querySelector('.feedback__form input[name=tel]');
-  console.log('inputName ', inputName.value);
-  console.log('inputTel ', inputTel.value);
+  const telOk = regTel.exec(inputTel.value);
+
+  // console.log('inputName ', inputName.value);
+  // console.log('inputTel ', inputTel.value);
 
   if (inputName.value == '') {
     error++;
-    inputName.style.border = '1px solid #ff0000';
+    inputName.style.borderBottomColor = '#ff5555';
+    inputName.style.color = '#ff5555';
   } else {
-    inputName.style.border = 'none';
-    inputName.style.borderBottom = '1px solid #ce0476';
+    inputName.style.borderBottomColor = '#ce0476';
+    inputName.style.color = '#fff';
   }
 
-  if (regTel.exec(inputTel.value) == null) {
+  if (!telOk) {
     error++;
-    inputTel.style.border = '1px solid #ff0000';
+    inputTel.style.borderBottomColor = '#ff5555';
+    inputTel.style.color = '#ff5555';
   } else {
-    inputTel.style.border = 'none';
-    inputTel.style.borderBottom = '1px solid #ce0476';
+    inputTel.style.borderBottomColor = '#ce0476';
+    inputTel.style.color = '#fff';
   }
 
   if (error > 0) {
