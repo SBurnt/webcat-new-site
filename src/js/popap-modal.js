@@ -17,14 +17,14 @@ const feedback = document.querySelector('.feedback');
 const btnFeedback = document.querySelectorAll('.js-feedback-toggle');
 const confidentiality = document.querySelector('.confidentiality');
 const btnConfidentiality = document.querySelectorAll('.js-confidentiality-toggle');
-const html = document.querySelector('html');
+// const html = document.querySelector('html');
 const body = document.querySelector('body');
 
 // ---------- show mobile menu start ----------
 menuBtn.forEach(items => {
   items.addEventListener('click', () => {
     menu.classList.toggle('active');
-    html.classList.toggle('overflow-hidden');
+    // html.classList.toggle('overflow-hidden');
     body.classList.toggle('overflow-hidden');
   });
 });
@@ -32,7 +32,7 @@ menuBtn.forEach(items => {
 menuLink.forEach(items => {
   items.addEventListener('click', () => {
     menu.classList.toggle('active');
-    html.classList.toggle('overflow-hidden');
+    // html.classList.toggle('overflow-hidden');
     body.classList.toggle('overflow-hidden');
   });
 });
@@ -42,7 +42,7 @@ menuLink.forEach(items => {
 btnFeedback.forEach(items => {
   items.addEventListener('click', () => {
     feedback.classList.toggle('active');
-    html.classList.toggle('overflow-hidden');
+    // html.classList.toggle('overflow-hidden');
     body.classList.toggle('overflow-hidden');
   });
 });
@@ -52,7 +52,7 @@ btnFeedback.forEach(items => {
 btnConfidentiality.forEach(items => {
   items.addEventListener('click', () => {
     confidentiality.classList.toggle('active');
-    html.classList.toggle('overflow-hidden');
+    // html.classList.toggle('overflow-hidden');
     body.classList.toggle('overflow-hidden');
   });
 });

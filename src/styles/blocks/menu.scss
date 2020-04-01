@@ -3,16 +3,16 @@
 
   display: none;
   overflow: hidden;
-
-  // background: $main-color-bg;
   background: url(../assets/img/bg_popup.png) no-repeat center;
   background-size: cover;
 
   &.active {
+    width: 100vw;
+    height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
-    bottom: 0;
+    // bottom: 0;
     left: 0;
     z-index: 999;
 
@@ -133,17 +133,24 @@
     opacity: 0.3;
   }
 
-  @media (max-width: 1919.98px) {}
+  @media (max-width: 1919.98px) {
+  }
 
-  @media (max-width: 1439.98px) {}
+  @media (max-width: 1439.98px) {
+  }
 
-  @media (max-width: 1023.98px) {}
+  @media (max-width: 1023.98px) {
+  }
 
-  @media (max-width: 767.98px) {}
+  @media (max-width: 767.98px) {
+    &__cell {
+      margin-bottom: 30px;
+    }
+  }
 
   @media (max-width: 374.98px) {
     &__cell {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
   }
 }
