@@ -42,6 +42,7 @@
 
     &::placeholder {
       color: $white-color;
+
       opacity: 0.6;
     }
   }
@@ -60,6 +61,7 @@
 
     span {
       color: $pink-color-confid;
+
       cursor: pointer;
     }
   }
@@ -121,7 +123,8 @@
     opacity: 0.7;
   }
 
-  @media (max-width: 1919.98px) {}
+  @media (max-width: 1919.98px) {
+  }
 
   @media (max-width: 1439.98px) {
     .section__inner {
@@ -160,13 +163,24 @@
     }
 
     &__confid {
+      max-width: 430px;
+      margin: 0 auto;
       margin-top: 20px;
+    }
+
+    &__address {
+      text-align: left;
     }
   }
 
-  @media (max-width: 1023.98px) {}
+  @media (max-width: 1023.98px) {
+  }
 
   @media (max-width: 767.98px) {
+    .section__inner {
+      align-items: flex-start;
+    }
+
     &__left {
       margin-bottom: 45px;
     }
@@ -181,6 +195,10 @@
       text-align: left;
     }
 
+    &__form {
+      margin: 0;
+    }
+
     &__confid {
       text-align: left;
     }
@@ -190,5 +208,6 @@
     }
   }
 
-  @media (max-width: 374.98px) {}
+  @media (max-width: 374.98px) {
+  }
 }
