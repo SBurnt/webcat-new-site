@@ -4,6 +4,7 @@
   display: none;
   overflow: hidden;
   background: url(../assets/img/bg_popup.jpg) no-repeat center;
+  background-color: $main-color-bg;
   background-size: cover;
 
   &.active {

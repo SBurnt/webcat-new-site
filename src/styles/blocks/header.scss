@@ -1,5 +1,7 @@
 .header {
   background: url(../assets/img/header-hands.png) no-repeat, url(../assets/img/bg_header.jpg) no-repeat;
+  background-color: $main-color-bg;
+  
   background-position: right center, center;
   background-size: contain, cover;
 

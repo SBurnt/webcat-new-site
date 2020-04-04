@@ -69,6 +69,9 @@ const optimizationImg = () => {
         gifsicle: {
           interlaced: false,
         },
+        // webp: {
+        //   quality: 90
+        // },
       },
     };
   }
@@ -175,7 +178,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(gif|png|jpe?g|svg)$/i,
+        test: /\.(gif|png|jpe?g|svg|webp)$/i,
         use: [
           {
             loader: 'file-loader',
