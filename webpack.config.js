@@ -57,14 +57,14 @@ const optimizationImg = () => {
       options: {
         mozjpeg: {
           progressive: true,
-          quality: 70,
+          quality: 95,
         },
-        optipng: {
-          enabled: true,
-        },
+        // optipng: {
+        //   enabled: true,
+        // },
         pngquant: {
           quality: [0.65, 0.9],
-          speed: 4,
+          speed: 2,
         },
         gifsicle: {
           interlaced: false,
