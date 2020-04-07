@@ -3,18 +3,19 @@
 $usertel = $_POST['tel'];
 $username = $_POST['name'];
 $userdate = date('Y-m-d H:i:s');
-echo 'usertel ' . $usertel;
-echo ' username ' .  $username;
-echo ' userdate ' .  $userdate;
+// echo 'usertel ' . $usertel;
+// echo ' username ' .  $username;
+// echo ' userdate ' .  $userdate;
 
 //для почты
-$sendto = 's.pashkevich@webcat.by';
+$sendto = 'igor@webcat.by';
+$sendto2 = 's.pashkevich@webcat.by';
 
 // Формирование заголовка письма
-$subject = "new webcat site";
+$subject = "Заявка с Webcat.by";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
-$headers .= "From: <new-webcat@webcat.by>\r\n"; // от кого письмо
+$headers .= "From: <webcat@webcat.by>\r\n"; // от кого письмо
 
 // Формирование тела письма
 $msg  = "<html><body style='font-family:Arial,sans-serif;'>";
@@ -28,3 +29,4 @@ $msg .= "</body></html>";
 require_once __DIR__ . "/SendMailSmtpClass.php";
 $mailSMTP = new SendMailSmtpClass(); // создаем экземпляр класса
 $result = $mailSMTP->send($sendto, $subject, $msg, $headers); // отправляем письмо
+$result2 = $mailSMTP->send($sendto2, $subject, $msg, $headers); // отправляем письмо

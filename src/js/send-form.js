@@ -7,7 +7,7 @@ const formFeedback = document.querySelector('.feedback__form');
 const thanks = document.querySelector('.thanks');
 const btnThanksBack = document.querySelector('.js-thanks__btn');
 // const phone = document.querySelectorAll('.phone-input');
-const html = document.querySelector('html');
+// const html = document.querySelector('html');
 const body = document.querySelector('body');
 
 // Inputmask({
@@ -27,7 +27,7 @@ const body = document.querySelector('body');
 // const regTel = /\+\d{3} \((25|29|33|44)\) \d{3}-\d{2}-\d{2}/;
 const regTel = /\+\d{9,}|\d{9,}/;
 
-btnSendFormFooter.addEventListener('click', e => {
+btnSendFormFooter.addEventListener('click', (e) => {
   // e.preventDefault();
 
   let error = 0;
@@ -64,11 +64,12 @@ btnSendFormFooter.addEventListener('click', e => {
   let formData = new FormData(formFooter);
 
   const xmlHttp = new XMLHttpRequest();
-  xmlHttp.onreadystatechange = function() {
+  xmlHttp.onreadystatechange = function () {
     if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-      console.log('send footer');
+      ym(46413666, 'reachGoal', 'lead');
+      // console.log('send footer');
       thanks.classList.toggle('active');
-      html.classList.toggle('overflow-hidden');
+      // html.classList.toggle('overflow-hidden');
       body.classList.toggle('overflow-hidden');
       inputName.value = '';
       inputTel.value = '';
@@ -78,7 +79,7 @@ btnSendFormFooter.addEventListener('click', e => {
   xmlHttp.send(formData);
 });
 
-btnSendFormFeedback.addEventListener('click', e => {
+btnSendFormFeedback.addEventListener('click', (e) => {
   // e.preventDefault();
 
   let error = 0;
@@ -115,13 +116,16 @@ btnSendFormFeedback.addEventListener('click', e => {
   let formData = new FormData(formFeedback);
 
   const xmlHttp = new XMLHttpRequest();
-  xmlHttp.onreadystatechange = function() {
+  xmlHttp.onreadystatechange = function () {
     if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-      console.log('send feedback');
+      ym(46413666, 'reachGoal', 'lead');
+      // console.log('send feedback');
       document.querySelector('.feedback').classList.toggle('active');
       thanks.classList.toggle('active');
       // html.classList.toggle('overflow-hidden');
       // body.classList.toggle('overflow-hidden');
+      inputName.value = '';
+      inputTel.value = '';
     }
   };
   xmlHttp.open('POST', './send/send-base.php');
@@ -131,7 +135,7 @@ btnSendFormFeedback.addEventListener('click', e => {
 // ---------- show thanks start ----------
 btnThanksBack.addEventListener('click', () => {
   thanks.classList.toggle('active');
-  html.classList.toggle('overflow-hidden');
+  // html.classList.toggle('overflow-hidden');
   body.classList.toggle('overflow-hidden');
 });
 // ---------- show thanks end ----------
