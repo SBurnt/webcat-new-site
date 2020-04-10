@@ -8,7 +8,7 @@ $userdate = date('Y-m-d H:i:s');
 // echo ' userdate ' .  $userdate;
 
 //для почты
-$sendto = 'igor@webcat.by';
+$sendto = 'a.kimbor@webcat.by';
 $sendto2 = 's.pashkevich@webcat.by';
 
 // Формирование заголовка письма
